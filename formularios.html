@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Cria o formulário -->
+    <form name="inscrever-se" method="get" target="_blank" autocomplete="on" onsubmit="alert('Formulario enviado!')"
+        action="servidor999" id="formulario1"></form>
+    <!-- Atributo name serve para pegarmos o formulario para validação -->
+    <!-- Atributo action serve para dizermos para onde vamos enviar os dados -->
+    <!-- Atributo method serve para escolhermos a forma como faremos o envio do formulário -->
+    <!-- Get faz o envio via URL, oque não é seguro para o envio de senhas -->
+    <!-- Post faz um envio encapsulado, mais seguro -->
+    <!-- Atributo target, geralmente utilizamos quando queremos fazer o enveio do formulario abrindo outra pagina -->
+    <!-- Atributo autocomplete, mais utilizado em telas de login quando deixamos o usuario e senha salvos no navegador, assim ele ira preencher os campos de forma automatica -->
+    <!-- Atributo onsubmit, mas utilizado com JS para validação do formulario, assim se o usuario inseir algum dado incorreto, emitimos um aviso -->
+    <!-- Atributo id é utilizado para capturar o formulario -->
+
+    <!-- Serve para envolver o forulario, bastente util para quando queremos quebrar o formulario em mais de uma parte ou em mais de um formulario -->
+    <fieldset>
+    <!-- Podemos desabilitar um formulario inteiro ou apenas um campo utilizando o atributo disabled -->
+
+        <!-- É utilizando para inserir um titulo para o formulário -->
+        <legend>Formulario</legend>
+
+
+        <!-- Cria os campos de entrada -->
+        <label>Nome:<input type="text" name="name" autofocus required form="formulario1"></label><br><br>
+        <!-- Tipo text, é um campo comum de texto -->
+        <!-- Utilizamos o atributo autofocus para quando a página ser carregada ela já vir com o campo nome acionado-->
+        <!-- Utilizamos o atributo required para obrigar o usuario a preencher aquele campo -->
+        <!-- Utilizamos o atributo form para informar para qual tag form iremos enviar essa informação do formulario caso tenhamos mais que uma, esse tipo de atributo é utilizado tambem quando queremos criar um formulario que vai liberando novas perguntas conforme as anteriores forem sendo respondidas -->
+
+        <label>Idade:<input type="number" name="age" min="0" max="100" step="2"></label><br><br>
+        <!-- Tipo number, é utilizado apenas para numeros -->
+        <!-- Atributos min e max é utilizado para definirmos um minimo e maximo para o campo -->
+        <!-- Atributo step utilizamos para saltar de numero de acordo com a necessidade-->
+
+        <label>Button:</label> <input type="button" value="enviar"><br><br>
+        <!-- Funciona da mesma forma que um botão, porem é muito menos semantico que uma tag button -->
+
+        <label>Range</label> <input type="range" min="0" max="50" value="30"><br><br>
+        <!-- Tipo range permite criarmos um campo scroll -->
+        <!-- Atributos min e max é utilizado para definirmos um minimo e maximo para o campo -->
+        <!-- Atributos value é utilizado para definirmos um valor padrão mas que pode ser alterado -->
+
+        <label>Color</label> <input type="color"><br><br>
+        <!-- Tipo color abre um campo de cores que pode ser alterado -->
+
+        <label>E-mail</label> <input type="email" placeholder="Digite o seu e-mail"><br><br>
+        <!-- Tipo email, é utilizado quando queremos receber um e-mail, não aceita valores sem o @ -->
+        <!-- Utilizamos o atributo placeholder para deixar uma descrição dentro do campo -->
+
+        <label>URL</label> <input type="url"><br><br>
+        <!-- Tipo url, é utilizado quando queremos receber uma url, não aceita valores sem o http na frente -->
+
+        <label>Data</label> <input type="date"><br><br>
+        <!-- Tipo date, é utilizado quando queremos receber datas -->
+
+        <label>Week</label> <input type="week"><br><br>
+        <!-- Tipo week, é utilizado para receber a semana do ano (semana 40) -->
+
+        <label>Month</label> <input type="month"><br><br>
+        <!-- Tipo month, é utilizado para receber o mês do ano -->
+
+        <label>Checkbox</label> <input type="checkbox" name="opcional[]" value="queijo">
+        <label>Checkbox</label> <input type="checkbox" name="opcional[]" value="cebola"><br><br>
+        <!-- Tipo checkbox, é utilizado para criar campos onde podemos ter mutiplcas seleções -->
+        <!-- Junto com o checkbox precisamos utilizar os atrbutos name que sera recebido no backend junto com o atributo value, que representa o valor do name -->
+        <!-- Como se trata de um campo de multiplca seleção, não faz sentindo enviarmos os valores de cada checkbox de forma separada, assim usamos o mesmo name em todos checkbox, porem é preciso atentar para utilizarmos um [] no final do name, assim o backend entendera que se trata de uma lista com varios valores, se as [] não forem utilizadas o backend entendera qye o name é um atributo só, onde o valor foi alterado diversas vezes -->
+
+        <label>Radio</label> <input type="radio" name="opcional" value="sim">
+        <label>Radio</label> <input type="radio" name="opcional" value="não"><br><br>
+        <!-- Tipo radio, geralmente é utilizado como um valor booleano (sim ou não) -->
+        <!-- unto com o radio tambem precisamos utilizar os atrbutos name que sera recebido no backend junto com o atributo value, que representa o valor do name -->
+        <!-- É importante atentarmos para que eles tem valores diferentes, caso contrario sera possivel marcar multiplcas escolhas e ira acarretar em erros -->
+
+        <label>Hiddne</label> <input type="hidden"><br><br>
+        <!-- Tipo hidden, é um campo invisivel para o usuario mas que é enviado junto com o formulario -->
+
+        <label>File</label> <input type="file"><br><br>
+        <!-- Tipo file, é utilizado para receber arquivos, nele temos o atributo multiple que serve para permitir que seja enviado mais de um arquivo -->
+
+        <label>Search</label> <input type="search"><br><br>
+        <!-- Tipo search, é utilizado como um campo de busca-->
+
+        <label>Select</label> <select name="cargo" multiple>
+            <option value="">Selecione o Cargo</option>
+            <option value="assistente">Assistente</option>
+            <option value="analista">Analista</option>
+        </select><br><br>
+        <!-- Tipo select é um campo com opções já existente, limitando o usuario de informar qualquer valor dentro do formulario -->
+        <!-- No select podemos utilizar o atributo multiple, onde permite fazer multiplcas seleções-->
+
+        <label>Mensagem:</label> <textarea rows="10" cols="50" minlength="10" maxlength="50"></textarea><br><br>
+        <!-- Tipo textarea, é utilizado para receber mensagem maiores -->
+        <!-- Utilizamos os atributos rows e cols para definir um tamanho de quantas linhas e colunas o campo tera, caso as mensagens ultrapassem o tamanho atribuido, o campo ira gerar um scroll -->
+        <!-- Utilizamos os atributos min ou maxlength para definir um numero minimo ou maximo de caracteres -->
+        <!-- Caso não seja definido um tamanho padrão, o usuario podera almentar e diminuir o campo da forma que ele quiser -->
+
+        <!-- Cria os botões para interação com o formulário -->
+        <button type="submit">Enviar</button>
+        <!-- Tipo submit, é utilizado para fazer o envio do formulário -->
+
+        <button type="reset">Limpar</button>
+        <!-- Tipo reset, é utilizado para limpar os campos de um formulario -->
+    </fieldset>
+</body>
+
+</html>

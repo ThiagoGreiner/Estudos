@@ -7,7 +7,8 @@
 </head>
 <body>
     <!-- Titulos com Marcação -->
-    <h1><mark>Texto 1</mark></h1>
+    <!-- O atributo contenteditable permite o usuario alterar o conteudo da tag -->
+    <h1 contenteditable=><mark>Adicione um titulo como preferir</mark></h1>
 
     <!-- Titulos italico -->
     <h2><i>Texto 2</i></h2>
@@ -24,8 +25,9 @@
     <!-- Titulos com renderização a cima da linha -->
     <h6>Texto <sup>6</sup></h6>
 
-    <!-- Paragrafo -->
-    <P>Paragrafo</P>
+    <!-- Paragrafo com negrito -->
+    <!-- Ambas as tags deixam em negrito, porem a tag strong deixa o texto com mais enfase e semantica -->
+    <P><b>Para</b><strong>grafo</strong></P>
 
     <!-- Small -->
     <small>Small</small>
@@ -45,9 +47,6 @@
 
     <!-- Quebra de linha horizontal -->
     <hr>
-    
-    <!-- citação -->
-    <blockquote>Olá, sou uma citação</blockquote>
 
     <!-- Trecho de código que foi excluido -->
     <del>Trecho excluido do documento</del>
@@ -57,5 +56,9 @@
 
     <!-- Texto resumido e sua explicação -->
     <abbr title="HyperText Markup Language">HTML</abbr>
+
+    <!-- Permite a alterar as cores e tipos de fontes, porem esta tag esta ficando em desuso -->
+    <font color="red" face="arial, tahoma">Programe</font>
+    
 </body>
 </html>

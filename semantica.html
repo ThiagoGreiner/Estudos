@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Criando o cabrçalho -->
+    <header>
+
+    </header>
+    <!-- Criando o corpo da pagina -->
+    <main>
+        <!-- Podemos repetir outras tags dentro do main, mas o mais só pode existir um por pagina, o main pode ser filho do body, div e ..., porem não pode ser filho do header, footer, section, article -->
+        <header></header>
+
+        <!-- É utilizado para colocar o artigo da página em si, o article permite o aninhamento entre ele, então quando usamos um article dentro do outro, quer dizer que oque estiver dentro do article filho esta relacionado com oque esta dentro do article pai -->
+        <article></article>
+
+        <!-- É bastante utilizado quando queremos mencionar uma data, por exeplos em uma pagina com artigos publicados, utilizamos essa tag e eatributo para informar quando foi publicado esse artigo -->
+        <time pubdate>20/11/1886 21:00</time>
+
+        <!-- Utilizamos quando queremos fazer uma critação, ainda dentro do blockquote podemos utilizar o atributo cite, este link não ira aparecer para o usuario, mas ajuda o html a entender que é uma citação -->
+        <blockquote cite="https://aestrela pai">Aqui estamos falando da estrela pai</blockquote>
+
+        <!-- É utilizado para citações da mesma forma que o blockquote, porem a tag q não faz quebras de linhas -->
+        <q></q>
+
+        <!-- Geralmente utilizamos para representar seções da página quando não temos um elemento mais semantico para representar esta seção, podemos utilizar para representar uma lista de resultados de pesquisa por exemplo -->
+        <section></section>
+
+        <!--Geralmente é utilizado para assuntos auxiliares, assuntos que não tem muito haver com o conteudo principal da pagina, mão podemos utilizar textos entre paresenteses -->
+        <aside></aside>
+
+        <!-- Utilizamos para representar links de navegação -->
+        <nav></nav>
+
+        <!-- É utilizado como um container e é bastante utilizada para delimitar o escopo de uma figura ou imagem -->
+        <figure>
+            <!-- É utilizada como uma tag auxiliar da tag figure e serve para colocar uma descrição sobre determinada imagem -->
+            <figcaption></figcaption>
+        </figure>
+
+        <!-- É utilizada para informar diversas opções de imagens, que irão se alterar conforme a tela do usuario -->
+        <picture>
+            <!-- Utilizamos a tag source para informar as outras opções de imagem, e junto dela utilizamos os atributos srcset onde iremos informar o caminho da imagem e o media que ira informar a condição para aquela imagem aparecer -->
+            <source srcset="Informamos o endereço da outra imagem" media="(min-width: 800px)">
+            <!-- Informamos a imagem padrão-->
+            <img src="" alt="">
+        </picture>
+
+        <footer></footer>
+    </main>
+    <!-- Criando o rodape da pagina -->
+    <footer>
+        <!-- Utilizada para informar endereços -->
+        <address>Rua Dom Pedro III</address>
+    </footer>
+</body>
+</html>

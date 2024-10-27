@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- A tag embed é utilizada para carregar midias externas do site -->
+    <embed src="caminho do video mp4">
+    <!-- Porem a baixo veremos como inserir diversos tipos de midia, de forma mais semântica -->
+
+    <!-- Utilizamos a tag img para colocar imagens e gifs em nosso site -->
+    <img src="https://cdn.prod.website-files.com/6469e2294ac68c3d5caea372/651feb9e6e28277cc5858f9c_7Xk__UXCehYJddv1DTlSmy3t2KW_6ZIzTJm4vI5-8ISsBORfRcWzxza6wsM8rEcdiQKInE-Y9sSTT6MY7Cczw5Loocz00Fnb-ezn5CaJuBj0HtA43zPlGjRXXzwHep27lfiLb7BW1B4RgT1fyZbrrBM.gif" title="Logo" alt="Gif do bob esponja adimirado">
+    <img src="https://www.nasa.gov/wp-content/uploads/2023/09/nasa-meaball-logo-1.png">
+    <!-- Dentre os tipos de imagens temos o JPG (é uma imagens mais comprimida, porem perdemos muitos recursos e resolução) e o PNG  (É um pouco mais pesado que o JPG, porem temos mais qualidade na imagem), alem disso ainda temos o SVG (É um tipo de arquivo vetorial, que grava apenas as cordenadas da imagem, sendo assim ele é limitado a desenhos de cores mais solidas, porem não perdemos qualidade na imagem) -->
+    <!-- Ainda na tag img podemos utilizar o atributo title, onde tera um titulo sobre aquela imagem e ira aparecer quando o user passar o mouse por cima -->
+    <!-- Temos tambem o atributo alt que deixa uma descrição para a imagem, fazendo com que ela fique acessivel para leitores de tela -->
+
+    <!-- Utilizamos a tag audio para colocar audios mp3 em nossa pagina -->
+    <audio controls autoplay>
+        <source src="caminho do audio mp3"/>
+        <!-- Inserimos uma mensagem para instruir o usuario caso o audio não funcione no navegador dele -->
+        O seu navegador não possui suporte para este audio
+    </audio>
+    <!-- Dentro da tag audio utilizamos o atributo controls para ativar os controles de audio -->
+    <!-- Podemos utilizar tambem o atributo autoplay, que assim que carregar a pagina, o audio ira começar a tocar -->
+
+    <!-- Utilizamos a tag video para colocar videos em nossa pagina -->
+    <video controls autoplay>
+        <!-- Podemos tambem fazer um encadeamento de video, por exemplos, colocamos um video mp4 e outro webm, assim se o video mp4 não funcionar, o vageador ira tentar reproduzir o webm -->
+        <source src="caminho do video mp4">
+        <source src="caminho do video webm">
+        <!-- A tag track é utilizado para inserirmos legenda no video, para cada legenda é necessario inserir uma track diferente -->
+        <!-- O atributo src informa o caminho do arquivo com a legenda -->
+        <!-- O kind capitions informa que estamos colocando legendas -->
+        <!-- O srclang infomra a linguagem da legenda, no caso estamos colocando uma legenda ingles -->
+        <track src="caminho do aruivo legenda" kind="captions" srclang="en"/>
+        <!-- Inserimos uma mensagem para instruir o usuario caso o video não funcione no navegador dele -->
+        Seu navegador não suporta video
+    </video>
+    <!-- Dentro da tag video utilizamos o atributo controls para ativar os controles de audio -->
+    <!-- Podemos utilizar tambem o atributo autoplay, que assim que carregar a pagina, o video ira começar a tocar -->
+     
+    <!-- Tambem é muito utilizado para carregar outros sites dentro do nosso site -->
+    <iframe src="https://web.dio.me/"></iframe>
+
+    <!-- Exemplo de um iframe extraido do google maps -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220895.17940008777!2d-51.17714195000005!3d-30.108870050000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95199cd2566acb1d%3A0x603111a89f87e91f!2sPorto%20Alegre%2C%20RS!5e0!3m2!1spt-BR!2sbr!4v1729915954613!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</body>
+</html>

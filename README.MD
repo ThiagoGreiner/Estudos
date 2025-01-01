@@ -15,7 +15,9 @@ Este repositório está dividido em várias áreas de estudo, que podem ser cons
 
 [JavaScript](https://github.com/ThiagoGreiner/Estudos/tree/main/JavaScript)
 
-[Teste de Software](https://github.com/ThiagoGreiner/Estudos/tree/main/Teste%20_de_Software)
+[Qualidade de Software (QA)](https://github.com/ThiagoGreiner/Estudos/tree/main/Teste%20_de_Software)
+
+[Teste de Software]()
 
 ## Explicação:
 

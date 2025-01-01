@@ -17,7 +17,7 @@ Este repositório está dividido em várias áreas de estudo, que podem ser cons
 
 [Qualidade de Software (QA)](https://github.com/ThiagoGreiner/Estudos/tree/main/Teste%20_de_Software)
 
-[Teste de Software]()
+[Teste de Software](https://github.com/ThiagoGreiner/Estudos/tree/main/Testes_de_software)
 
 ## Explicação:
 

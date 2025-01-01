@@ -1,17 +1,6 @@
 # Repositório de Aprendizado
 
-<<<<<<< HEAD
 Este repositório tem como objetivo armazenar tudo o que aprendi ao longo do tempo sobre temas fundamentais para o desenvolvimento de software, como programação, segurança de software, bancos de dados, testes de software, e mais. A ideia é criar uma área de pesquisa pessoal que posso consultar posteriormente, ao mesmo tempo que contribuo com o aprendizado de outros estudantes e profissionais da área.
-=======
-<div style="display:flex">
-    <span>
-        Este repositório tem como objetivo armazenar tudo o que aprendi ao longo do tempo sobre temas fundamentais para o desenvolvimento de software, como programação, segurança de software, bancos de dados, testes de software, e mais. A ideia é criar uma área de pesquisa pessoal que posso consultar posteriormente, ao mesmo tempo que contribuo com o aprendizado de outros estudantes e profissionais da área.
-    </span>
-    <span style="width:30%">
-        <img src="./img/livros.png">
-    </span>
-</div>
->>>>>>> 131a94b1ab3c17c1b100befbec6632afbb9f42e8
 
 ## Conteúdo
 

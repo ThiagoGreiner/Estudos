@@ -3,7 +3,7 @@
 TDD (Test-Driven Development) é uma abordagem de desenvolvimento de software em que os testes são criados antes mesmo de o código funcional ser implementado. Essa metodologia ajuda a garantir que o software atenda aos requisitos especificados desde o início, promovendo código mais confiável e de alta qualidade.
 
 <p align="center">
-  <img alt="Teste Modelo Agil" src="./img/TDD.png" width="100%">
+  <img alt="Teste Modelo Agil" src="./img/TDD.png" width="40%">
 </p>
 
 ### Red (Escrever o Teste)

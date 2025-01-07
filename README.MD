@@ -2,8 +2,6 @@
 
 Bem-vindo ao meu repositório pessoal de aprendizado! 
 
-<img src="./img/livros.png" alt="Descrição da Imagem" style="float: right; margin-left: 20px; max-width: 100px; height: auto;">
-
 O objetivo deste espaço é documentar e organizar o que aprendi e venho aprendendo sobre diversos temas fundamentais no desenvolvimento de software. As áreas abordadas incluem **programação** e **testes de software**, e em breve expandiremos para outras áreas, como **segurança de software**, **bancos de dados** e muito mais.
 
 Este repositório serve como um repositório de conhecimento pessoal, onde compartilho o aprendizado adquirido e que pode ser útil para outros estudantes e profissionais da área. Ele está em constante atualização, portanto, não deixe de voltar para explorar novos conteúdos à medida que o repositório cresce.

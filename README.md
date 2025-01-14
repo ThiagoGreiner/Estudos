@@ -14,21 +14,27 @@ O conteúdo está organizado em várias áreas de estudo, permitindo que você n
     <table>
         <thead>
             <tr align="center">
-                <td colspan="2" style="font-size:20px"><strong>Índice</strong></td>
+                <td colspan="4" style="font-size:20px"><strong>Índice</strong></td>
             </tr>
             <tr align="center">
-                <td><b>Front End</b></td>
-                <td><b>QA e Testes de Software</b></td>
+                <td><b>Front-End</b></td>
+                <td><b>Back-End</b></td>
+                <td><b>Qualidade de Software</b></td>
+                <td><b>Testes de Software</b></td>
             </tr>
         </thead>
         <tbody>
             <tr align="center">
-                <td><a href="https://github.com/ThiagoGreiner/Estudos/tree/main/HTML">HTML</a></td>
-                <td><a href="https://github.com/ThiagoGreiner/Estudos/tree/main/Teste%20_de_Software">Qualidade de Software (QA)</a></td>
+                <td><a href="">HTML</a></td>
+                <td><a href="">C#</a></td>
+                <td><a href="">Qualidade de Software (QA)</a></td>
+                <td><a href="">Teste unitarios em Java - Junit</a></td>
             </tr>
             <tr align="center">
-                <td><a href="https://github.com/ThiagoGreiner/Estudos/tree/main/JavaScript">JavaScript</a></td>
-                <td><a href="https://github.com/ThiagoGreiner/Estudos/tree/main/Testes_de_software">Testes de Software</a></td>
+                <td><a href="">JavaScript</a></td>
+                <td><a href=""></a></td>
+                <td><a href=""></a></td>
+                <td><a href="">Teste unitarios em C# - xUnit</a></td>
             </tr>
         </tbody>
     </table>
